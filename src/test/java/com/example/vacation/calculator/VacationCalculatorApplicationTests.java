@@ -1,4 +1,4 @@
-package com.example.vacation.alculator;
+package com.example.vacation.calculator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
