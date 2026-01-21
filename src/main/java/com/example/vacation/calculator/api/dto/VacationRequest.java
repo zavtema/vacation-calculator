@@ -1,6 +1,5 @@
 package com.example.vacation.calculator.api.dto;
 
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import java.time.LocalDate;
 

@@ -15,7 +15,6 @@ class VacationCalculatorServiceTest {
         HolidayCalendar calendar = date -> false;
         VacationCalculatorService service = new VacationCalculatorService(calendar);
 
-        // 600000/12 = 50000; 50000/29.3 ≈ 1706 (HALF_UP)
         var res = service.calculateByDays(600_000L, 14);
 
         assertEquals(14, res.getVacationDays());
