@@ -5,14 +5,30 @@ import javax.validation.constraints.Positive;
 import java.time.LocalDate;
 
 public class VacationRequest {
-    @NotNull
-    private LocalDate startDate;
-
-    @NotNull
-    private LocalDate endDate;
 
     @Positive
-    private int averageDailySalary;
+    private long averageSalary12Months; // сумма за 12 месяцев (обязательно)
+
+    private Integer vacationDays;
+
+    private LocalDate startDate;
+    private LocalDate endDate;
+
+    public long getAverageSalary12Months() {
+        return averageSalary12Months;
+    }
+
+    public void setAverageSalary12Months(long averageSalary12Months) {
+        this.averageSalary12Months = averageSalary12Months;
+    }
+
+    public Integer getVacationDays() {
+        return vacationDays;
+    }
+
+    public void setVacationDays(Integer vacationDays) {
+        this.vacationDays = vacationDays;
+    }
 
     public LocalDate getStartDate() {
         return startDate;
@@ -28,13 +44,5 @@ public class VacationRequest {
 
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
-    }
-
-    public int getAverageDailySalary() {
-        return averageDailySalary;
-    }
-
-    public void setAverageDailySalary(int averageDailySalary) {
-        this.averageDailySalary = averageDailySalary;
     }
 }
