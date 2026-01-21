@@ -25,6 +25,4 @@ public class ConfigHolidayCalendar implements HolidayCalendar {
     public Set<LocalDate> getHolidays() {
         return holidays;
     }
-
-
 }
